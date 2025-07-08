@@ -1,37 +1,142 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>자기소개</title>
+    <title>花の彩り - フラワーショップ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>내 프로필</h1>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">🌸 花の彩り</h1>
+                <ul class="nav-menu">
+                    <li><a href="#home">ホーム</a></li>
+                    <li><a href="#products">商品一覧</a></li>
+                    <li><a href="#services">サービス</a></li>
+                    <li><a href="#about">店舗情報</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+            </div>
+        </nav>
     </header>
+
     <main>
-        <section id="profile">
-            <h2>자기소개</h2>
-            <p>안녕하세요! 제 웹사이트에 오신 것을 환영합니다.</p>
-            <p>여기에 자기소개서를 작성합니다.</p>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>心を彩る花束を、あなたに</h2>
+                <p>新鮮で美しい花々で、特別な瞬間を演出します</p>
+                <a href="#products" class="cta-button">花を見る</a>
+            </div>
+            <div class="flower-decoration"></div>
         </section>
-        <section id="hobby">
-            <h2>취미</h2>
-            <ul>
-                <li>취미 1</li>
-                <li>취미 2</li>
-                <li>취미 3</li>
-            </ul>
+
+        <section id="products" class="products">
+            <h2>人気の商品</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image flower-1"></div>
+                    <h3>季節の花束</h3>
+                    <p class="price">¥3,500〜</p>
+                    <p>季節の新鮮な花を使った華やかな花束</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-image flower-2"></div>
+                    <h3>バラのアレンジメント</h3>
+                    <p class="price">¥5,000〜</p>
+                    <p>エレガントなバラを使った豪華なアレンジ</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-image flower-3"></div>
+                    <h3>胡蝶蘭</h3>
+                    <p class="price">¥10,000〜</p>
+                    <p>お祝いに最適な高級胡蝶蘭</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-image flower-4"></div>
+                    <h3>プリザーブドフラワー</h3>
+                    <p class="price">¥4,000〜</p>
+                    <p>長く楽しめる美しいプリザーブドフラワー</p>
+                </div>
+            </div>
         </section>
-        <section id="contact">
-            <h2>연락처</h2>
-            <p>여기에 연락처 정보를 기재합니다.</p>
+
+        <section id="services" class="services">
+            <h2>サービス</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <span class="service-icon">🚚</span>
+                    <h3>配送サービス</h3>
+                    <p>地域内は当日配送も承ります</p>
+                </div>
+                <div class="service-item">
+                    <span class="service-icon">💐</span>
+                    <h3>オーダーメイド</h3>
+                    <p>ご希望に合わせた特別な花束をお作りします</p>
+                </div>
+                <div class="service-item">
+                    <span class="service-icon">🎉</span>
+                    <h3>イベント装飾</h3>
+                    <p>結婚式やパーティーの装花も承ります</p>
+                </div>
+                <div class="service-item">
+                    <span class="service-icon">🌿</span>
+                    <h3>定期便</h3>
+                    <p>毎月新鮮な花をお届けする定期便サービス</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>店舗情報</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>花の彩りへようこそ</h3>
+                    <p>創業20年の信頼と実績。私たちは、お客様の大切な瞬間を彩るお手伝いをさせていただいています。</p>
+                    <p>経験豊富なフローリストが、一つ一つ心を込めて花束やアレンジメントをお作りします。</p>
+                    <div class="store-info">
+                        <p><strong>営業時間：</strong>9:00 - 19:00（水曜定休）</p>
+                        <p><strong>住所：</strong>〒100-0000 東京都千代田区花町1-2-3</p>
+                        <p><strong>電話：</strong>03-1234-5678</p>
+                    </div>
+                </div>
+                <div class="about-image"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>お問い合わせ</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">お名前</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">メッセージ</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">送信する</button>
+            </form>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 내 이름</p>
+        <div class="footer-content">
+            <p>&copy; 2025 花の彩り - すべての権利を保有</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+            </div>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
